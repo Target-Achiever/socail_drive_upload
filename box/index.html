@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" src="https://app.box.com/js/static/select.js"></script>
+<div id="box-select"></div>
+<script>
+var options = {
+  clientId: 'dri8k286szel6q2xj0dpv6stoflls805',
+  linkType: 'direct',
+  multiselect: 'false'
+};
+
+var boxSelect = new BoxSelect(options);
+
+// Register a success callback handler
+boxSelect.success(function(response) {
+
+	console.log(response);
+
+});
+// Register a cancel callback handler
+boxSelect.cancel(function() {
+});
+
+</script>
+</body>
+</html>
